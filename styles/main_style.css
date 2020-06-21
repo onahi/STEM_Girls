@@ -1,0 +1,364 @@
+/*
+ Index page styles
+*/
+  body {
+    margin: 0 0 0 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+
+  .content{
+    margin: 0 0 0 0;
+    width: 100%;
+  }
+
+  .top{
+    width: 100%;
+    background-color:#5CE1E6;
+    height: 60px;
+  }
+
+  .stem_logo{
+    width: 10%;
+    height: 90;
+    margin-left: 5%;
+    padding-top: 2%;
+  }
+
+  .jumbotron{
+    width: 100%;
+    background-color: #5CE1E6;
+    height: 600px;
+  }
+  .jumbotron_text{
+    display: none;
+  }
+
+  .jumbotron_img{
+    width: 100%;
+    height: 95%;
+  }
+
+  main{
+    margin: 0px;
+  }
+
+/* Styling of the first contents containing the introduction*/
+
+  .first_content{
+    background-color: #FFE455;
+    width: 100%;
+    height: auto;
+    padding: 5% 0%;
+  }
+  .introduction{
+    width: 80%;
+    padding:0% 5%;
+    margin: 2% auto;
+
+  }
+  h1{
+    font-size: 1.2em;
+  }
+  h2{
+    font-size: 1em;
+  }
+  h1, p {
+    color: #0074DF;
+  }
+
+  .intro_description{
+    width: 70%;
+    margin: 10% auto;
+    background-color: #FFF4D0;
+    padding-bottom: 5%;
+  }
+
+  #stem_girl{
+    position: relative;
+    top: -2%;
+    left: -2%;
+  }
+
+   .intro_description ul li{
+     list-style-type: none;
+     line-height: 0.6em;
+   }
+
+/* Styling of Initiative Segment*/
+
+  .second_content{
+    background-color: #E4F2FF;
+    margin-top: -27px;
+  }
+
+  .initiatives{
+    width: 80%;
+    padding:5% 5%;
+    margin: 2% auto;
+  }
+
+.initiatives_list{
+  width: 100%;
+  background-color: #6171FF;
+  padding: 5% 0;
+  border-radius:  10px;
+  opacity: 60%;
+  color: #FFF4D0;
+}
+
+.initiatives_description{
+
+}
+
+.first_description, .second_description, .third_description{
+  display: flex;
+  flex-direction: row;
+  margin: 5% auto;
+  align-content: space-evenly;
+  height: 30%;
+}
+
+.second_description{
+  flex-direction: row-reverse;
+}
+
+.desc_icon{
+  width: 30%;
+  margin: auto;
+}
+
+.desc{
+  width: 70%;
+}
+.initiatives h1,p{
+  color: #00285B;
+}
+
+
+
+/* Styling of the quotes*/
+
+.third_content{
+  width: 100%;
+  height: auto;
+  background-color: white;
+  padding-bottom: 20%;
+  padding-top: 5%;
+}
+
+.quotes{
+  width: 80%;
+  margin: auto;
+  font-family: 'Libre Baskerville', serif;
+}
+
+/* Syling of the forth_content */
+
+.forth_content{
+  background-color: #DCDCDC;
+}
+
+.join{
+  height: 200px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+
+/*  Button styles
+*** Button hover
+*/
+button{
+  border-color: yellow;
+  margin-left: 60%;
+  background-color: #4EE2EC;
+  color:  #CA226B;
+  border: 2px solid #CA226B;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+button:hover{
+  background-color: #CA226B;
+  color: white;
+}
+
+.join button{
+  margin-left: 0.5%;
+  border-color: #00285B;
+  color: #00285B;
+  background-color: inherit;
+  height: 40px;
+}
+
+.join button:hover{
+  background-color: #00285B;
+  color: white;
+}
+
+
+
+
+/* Styling for desktop view
+** Full screen viewport**
+** Desktops, Laptops.
+*/
+
+
+@media screen and (min-width: 868px){
+body{
+  margin: 0 0 0 0;
+
+}
+h1{
+  font-size: 1.5em;
+}
+
+.top{
+  width: 100%;
+  height: 80px;
+}
+
+.stem_logo{
+  width: 5%;
+
+}
+
+.jumbotron{
+  width: 100%;
+  height: 540px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.jumbotron_text{
+  width: 35%;
+  margin-right: 4%;
+  margin-top: 8%;
+  display: block;
+}
+
+.jumbotron_text h1{
+  font-family: 'Indie Flower', cursive;
+  font-size: 40px;
+  color: #6171FF;
+}
+
+.jumbotron_text p{
+  color: hsla(200,0%,0%,.7);
+  font-size: 18px;
+  word-spacing: 0.5em;
+}
+
+span{
+  color: #CA226B;
+}
+
+.jumbotron_img{
+  margin-left: 8%;
+  width: 50%;
+  height: 95%;
+}
+
+.first_content{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.introduction{
+  width:50%;
+  margin-left: 10%;
+  padding-left: 2%;
+}
+.intro_description{
+  width: 25%;
+  margin-right: 10%;
+  margin-top: 5%;
+  margin-bottom: 2.5%;
+}
+
+
+.second_content{
+  text-align: center;
+}
+.initiatives_list{
+  width: 50%;
+  height: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  padding: 1% 0%;
+}
+.initiatives_list ul li{
+  margin-left: 10%;
+}
+.initiatives_description{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+.first_description, .second_description, .third_description{
+  flex-direction: column;
+  width: 30%;
+}
+.desc_icon{
+  width: 30%;
+}
+
+.desc{
+  margin-top: 0%;
+  height: 120px;
+  width: auto;
+}
+
+.quotes{
+  width: 30%;
+  margin-left: 50%;
+}
+
+.third_content{
+  height: 70px;
+}
+.join_STEM{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.join_image .pencil_color{
+  width: 32%;
+}
+
+.join{
+  width: 32%;
+  margin: 2% 1%;
+}
+
+.join button{
+  margin-left: 0.5%;
+  border-color: #00285B;
+  color: #00285B;
+  background-color: inherit;
+  width: 65%;
+}
+#become_member{
+  margin-top: 5%;
+}
+
+}
+
+
+@media screen and (min-width: 480px) {
+
+  .stem_logo{
+    padding-top: 1%;
+  }
+  .top{
+    height: 90px;
+  }
+
+}

@@ -1,5 +1,77 @@
 
 
+  .sidebar{
+    width: 50%;
+    height: 80px;
+    margin-left: 45%;
+    top: 0;
+  }
+  .nav_icon{
+    display: none;
+  }
+  .sidebar ul li{
+    display: inline;
+    width: 80%;
+    border-bottom: none;
+    margin-right: 5%;
+  }
+  .sidebar ul{
+    top: 0%;
+    margin-right: 20%;
+    width: 90%;
+    padding-top: 4%;
+  }
+  .sidebar ul ul li{
+    margin-left: 45%;
+    background-color: white;
+    display: none;
+    width: 150px;
+    padding: 2% 4%;
+    list-style-type: none;
+  }
+  .sidebar ul ul li a{
+    color: #e76525;
+  }
+
+  .sidebar ul ul li a:hover{
+    text-decoration: underline;
+  }
+
+  .sidebar ul li a{
+    text-decoration: none;
+    color: white;
+  }
+  .sidebar ul li a:hover{
+    text-decoration: underline;
+    color: white;
+  }
+
+  .sidebar ul ul li{
+    margin-left: 45%;
+    background-color: white;
+    display: none;
+    width: 150px;
+    padding: 2% 4%;
+    list-style-type: none;
+  }
+  .sidebar ul ul li a{
+    color: #e76525;
+  }
+
+  .sidebar ul ul li a:hover{
+    text-decoration: underline;
+    color: #e76525;
+  }
+  .sidebar_icon{
+    display: none;
+  }
+  .FAQs_About{
+    display: none;
+  }
+
+
+@media screen and (max-width: 868px){
+
 
 .sidebar{
   position: fixed;
@@ -15,6 +87,14 @@
   display: none;
 }
 
+.nav_icon{
+  display: block;
+}
+
+.sidebar ul{
+  background-color: white;
+}
+
 .sidebar ul li {
   list-style-type: none;
   border-bottom: 1px solid grey;
@@ -22,11 +102,29 @@
   padding-top: 2%;
   padding-bottom: 2%;
   padding-right: 5%;
+  display: block;
+  background-color: white;
+}
+
+.sidebar ul ul li{
+  margin-left: 0%;
 }
 
 .sidebar ul li a{
   text-decoration: none;
   color: black;
+}
+
+.sidebar ul ul li{
+  margin-left: 0%;
+}
+
+.sidebar ul ul li a{
+  color: #666666;
+}
+
+.sidebar_icon{
+  display: block;
 }
 
 .sidebar ul li:last-child{
@@ -41,8 +139,16 @@
   border-bottom: none;
   padding-top: 0.5%;
   padding-bottom: .5%;
+  display: block;
 }
 
+.sidebar ul ul li{
+  color: #666666;
+}
+
+.FAQs_About{
+  display: block;;
+}
 
 .close{
   margin-left: 2%;
@@ -52,11 +158,4 @@
 .close:hover {
   background-color: #ff8080;
   cursor: context-menu;
-}
-
-
-@media screen and (min-width: 868px){
-  .sidebar{
-    width: 20%;
-  }
 }

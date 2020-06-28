@@ -8,4 +8,7 @@ $(document).ready(function(){
   $(".close").click(function(){
     $(".sidebar").css("display", "none");
   })
+  $(".get_involved").click(function(){
+    $(".sidebar ul ul li").toggle('slide');
+})
 })

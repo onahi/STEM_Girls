@@ -1,0 +1,162 @@
+
+body{
+  margin: 0 0 0 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+  line-height: 1.8em;
+  color: #666666;
+}
+
+.content{
+  width: 100%;
+  height: auto;
+}
+header{
+  width: 100%;
+}
+
+.top{
+  width: 100%;
+  background-color:orange;
+  height: 60px;
+  position: fixed;
+  top: 0px;
+  border-bottom: 1px solid #999999;
+}
+
+.stem_logo{
+  width: 10%;
+  height: 90;
+  margin-left: 5%;
+  padding-top: 2%;
+  float: left;
+}
+
+.nav_icon{
+  margin-right: 10%;
+  color: white;
+  float: right;
+  font-size: 25px;
+  margin-top: 4%;
+}
+
+.nav_icon:hover{
+  background-color: white;
+  color: silver;
+  cursor: context-menu;
+}
+
+main{
+  margin-top: 60px;
+}
+
+.illustrate{
+  width: 100%;
+  margin: auto;
+  height: 400px;
+}
+
+.first_part{
+  background-color: white;
+  margin: auto;
+}
+
+.writeup{
+  padding: 5%;
+}
+
+button, input[type="submit"]{
+  background-color: #e76525;
+  width: auto;
+  height: 40px;
+  border: 3px solid white;
+  color: white;
+  border-radius: 5px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+}
+
+input[type="submit"]{
+  width: 120px;
+  margin-top: 2%;
+}
+
+button:hover, input[type="submit"]:hover{
+  background-color: orange;
+}
+
+.form{
+  padding: 10% ;
+  line-height: 2em;
+}
+
+input, select{
+  width: 90%;
+  height: 35px;
+  border: 1px solid #999999;
+  border-radius: 2px;
+}
+
+textarea{
+  width: 90%;
+}
+
+label{
+  margin-top: 10%;
+}
+
+ span{
+   color: #e76525;
+   font-size: 15px;
+   font-weight: bold;
+ }
+
+ footer{
+   width: 100%;
+   height: auto;
+   bottom: 0%;
+ }
+
+@media screen and (min-width: 868px){
+  .content{
+    border: 1px solid #999999;
+    width: 70%;
+    margin: 0 auto;
+    /*
+    -webkit-box-shadow: 0px 5px orange;
+    -moz-box-shadow: 1px 1px 1px 1px grey;
+     box-shadow: 1px 1px 1px 1px grey;
+     */
+  }
+
+  .top{
+    width: 70%;
+    height: 80px;
+    margin: 0 auto;
+  }
+
+  .stem_logo{
+    width: 5%;
+  }
+
+  main{
+    margin-top: 80px;
+  }
+
+  .writeup{
+    padding: 5% 10%
+  }
+
+  .form{
+    padding: 5% 10%;
+  }
+
+  textarea{
+    width: 70%;
+  }
+
+  input, select{
+    width: 70%;
+    height: 30px;
+  }
+}

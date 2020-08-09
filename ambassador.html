@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>STEM Girls: Become an Ambassador.</title>
-    <link rel="stylesheet" href="styles\become_style.css">
     <link rel="stylesheet" href="styles\nav_style.css">
     <link rel="stylesheet" href="styles\footer_style.css">
+    <link rel="stylesheet" href="styles\become_style.css">
     <link rel="icon" type="image/png" href="assets\tentative logo-round.png">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
@@ -23,10 +23,13 @@
               alt="STEM girls logo: a glowing bulb" width="100%" height="100%">
             </a>
           </div>
+
+          <!-- Navigation Icon for mobile devices-->
           <div class="nav_icon">
             &#9776;
           </div>
 
+          <!-- Navigation Bar-->
           <nav class="sidebar">
             <div class="sidebar_icon">
                <span class="close">&#10005; close</span>
@@ -39,6 +42,12 @@
               <li>
                 <a href="become-a-stem-girl.html"><b>Become a STEM GIRL</b></a>
               </li>
+              <li>
+                <a href="FAQs.html" class="FAQs_About"><b>FAQs</b></a>
+              </li>
+              <li>
+                <a href="about-us.html" class="FAQs_About"><b>About Us</b></a>
+              </li>
               <li >
                 <a href="#" class="get_involved"><b>Get Involved &#9660;</b></a>
                 <ul class="drop_down" >
@@ -46,23 +55,18 @@
                     <a href="become-a-mentor.html">Mentor/ Volunteer</a>
                   </li>
                   <li>
-                    <a href="" >Partner/ Friend</a>
+                    <a href="become-a-partner.html">Partner/ Friend</a>
                   </li>
                   <li>
                     <a href="ambassador.html">Ambassador</a>
                   </li>
                   <li>
-                    <a href="">Friend</a>
+                    <a href="friend.html">Friend</a>
                   </li>
                 </ul>
               </li>
-              <li>
-                <a href="#" class="FAQs_About"><b>FAQs</b></a>
-              </li>
-              <li><a href="#" class="FAQs_About"><b>About Us</b></a></li>
             </ul>
           </nav>
-
         </div>
       </header>
 
@@ -70,71 +74,61 @@
 
         <div class="first_part">
           <div class="illustrate">
-            <img src="assets\Become an Ambassador.png" width="100%" height="100%"
+            <h1 class="mobile-h1">
+              Be our Ambassador!
+            </h1>
+            <p class="mobile-h1">
+              An ambassador of STEM GIRLS is any individual who agrees to take on task
+              of representing STEM GIRLS in public, with partners and friends of STEM GIRLS,
+              and convey positive message about the different programs supported.
+            </p>
+            <img src="assets\STEM_Ambassador.png" width="100%" height="60%"
             alt="Pictures of STEM Girls with their Ambassador">
           </div>
 
           <div class="writeup">
-            <h1>
-              A small move can change a lot
+            <h1 class="desktop-h1">
+              Be our Ambassador!
             </h1>
+            <p class="desktop-h1">
+              An ambassador of STEM GIRLS is any individual who agrees to take on task
+              of representing STEM GIRLS in public, with partners and friends of STEM GIRLS,
+              and convey positive message about the different programs supported.
+            </p>
             <p>
-              To be a STEM GIRLS AMBASSADOR, you have to follow the following procedure
+              To be a STEM GIRLS AMBASSADOR you have to follow the following procedure:
             </p>
             <ol>
               <li>
                 Purchase a STEM Girls' Kits comprises a Customized STEM GIRLS T-shirt,
                 Stickers, Pen and a Brochure.
-                <ul>
-                  <li style="list-style-type: none">
-                    a) Put on STEM GIRLS AMBASSADOR T-Shirt, take photographs share on
-                    Facebook or Twitter page tag friends and tag STEM GIRLS Initiative:
-                    (@stemgirlsng, @stemgirls initiative).
-                  </li>
-                </ul>
               </li>
               <li>
                 As an ambassador of STEM GIRLS, you have to encourage girls to develop
-                interest in STEM by talking to Girls about opportunities in fields and be
-                a representative of STEM GIRLS in your home, school, church, mosque, office
-                and community.
-                <ol>
-                  <li style="list-style-type: none">
-                    a) Placed the STEM GIRLS AMBASSADOR sticker on astrtegic place such as your
-                    car, Office Desk etc that will constantly remin you and the people around of
-                    your passion for STEM Girls' education and the need to keep pushing to break
-                    barriers for girls in STEM.
-                  </li>
-                </ol>
+                interst in STEM by talking to Girls about opportunities in STEM fields
+                and be a representative of STEM GIRLS in your home, school, church, mosque,
+                office and community.
               </li>
             </ol>
-            <h2>
-              Benefits
-            </h2>
-            <ul>
-              <li>
-                The photo with the most likes and comments on social media for the month receives
-                STEM GIRLS AMBASSADOR AWARDS.
-              </li>
-            </ul>
             <a href="ambassador.html#form">
-              <button type="button" name="button"> Become an Ambassador </button>
+              <button type="button" name="button">Become an Ambassador</button>
             </a>
           </div>
 
         </div>
 
-        <div class="form" id="form">
-          <h2>Become an Ambassador</h2>
-          <form class="ambassador" action="index.html" method="post">
+        <!-- Form Segment -->
+        <div class="form" >
+          <div class="form-fields">
+          <form class="ambassador" action="confirmation-message.html" method="post">
             <label for="name">Full Name <span>*</span></label><br>
-            <input type="text" name="name" placeholder="Full Name" required ><br>
+            <input type="text" name="name"  required ><br>
 
             <label for="email">Email <span>*</span></label><br>
-            <input type="email" name="email" placeholder="Email" required><br>
+            <input type="email" name="email"  required><br>
 
             <label for="phone">Phone <span>*</span></label><br>
-            <input type="text" name="phone" placeholder="Phone" required><br>
+            <input type="number" name="phone"  required><br>
 
             <label for="gender">Gender <span>*</span></label><br>
             <select class="gender" name="gender" >
@@ -143,85 +137,58 @@
             </select><br>
 
             <label for="country">Country <span>*</span></label><br>
-            <input type="text" name="country" placeholder="Country" required><br>
+            <input type="text" name="country"  required><br>
 
             <label for="city"> City <span>*</span></label><br>
-            <input type="text" name="city" placeholder="City" required><br>
+            <input type="text" name="city"  required><br>
 
             <label for="facebook"> Facebook </label><br>
-            <input type="text" name="facebook" placeholder="Facebook"><br>
+            <input type="text" name="facebook" ><br>
 
             <label for="twitter"> Twitter </label><br>
-            <input type="text" name="twitter" placeholder="Twitter Handle"><br>
+            <input type="text" name="twitter" ><br>
 
             <label for="address"> Address </label><br>
-            <input type="text" name="address" placeholder="Address"><br>
+            <input type="text" name="address" ><br>
 
-            <input type="submit" name="submit" value="Submit">
+            <input type="submit" name="submit" value="Become an Ambassador">
           </form>
         </div>
+        </div>
       </main>
+      <!-- Footer Segment-->
+      <footer >
+        <h3>African Girls Empowerment Network</h3>
+        <p>44, Idiroko Road, Off Lagos Abeokuta Expressway, Sango Ota, Ogun, Nigeria.</p>
+          <div class="footer">
+            <div class="menu">
+              <h3> Website </h3>
+              <p>
+                www.agenetwork.org/stemgirls
+              </p>
+            </div>
 
-      <footer id="footer">
+            <div class="involved_menu">
+              <h3>Email</h3>
+                <p>
+                  info@agenetwork.org
+                <br>
+                  stemgirls@agenetwork.org
+                </p>
+            </div>
 
-        <div class="footer">
-          <div class="menu">
-            <h3> Menu </h3>
-            <ul>
-              <li>
-                <a href="index.html">Home</a>
-              </li>
-              <li>
-                <a href="become-a-stem-girl.html">Become a STEM Girl</a>
-              </li>
-              <li>
-                <a href="#">About Us</a>
-              </li>
-              <li>
-                <a href="#">Contacts</a>
-              </li>
-            </ul>
+            <div class="social_handles">
+              <h3>WhatsApp/Call</h3>
+              <p>
+                +2348062762068
+                <br>
+                +2348033150904
+                <br>
+                +2348094860266
+              </p>
+            </div>
           </div>
 
-          <div class="involved_menu">
-            <h3>Get Involved</h3>
-            <ul>
-              <li>
-                <a href="become-a-mentor.html">Mentor/ Volunteer</a>
-              </li>
-              <li>
-                <a href="#">Partner/ Friend</a>
-              </li>
-              <li>
-                <a href="ambassador.html">Ambassador</a>
-              </li>
-              <li>
-                <a href="#">Friend</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="social_handles">
-            <h3>Social Media/ Contacts</h3>
-            <ul>
-              <li>
-                <a href="https://web.facebook.com/TheAGENetwork">Facebook</a>
-              </li>
-              <li>
-                <a href="https://twitter.com/Theagenetwork">Twitter</a>
-              </li>
-              <li>
-                <a href="#">Email: operations@agenetwork.org</a>
-              </li>
-              <li>
-                Whatsapp: +2348033150904
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="lower_footer">
-          <h3>STEM Girls Initiative, Powered By Age Network <br>&#169; stemgirls.agenetwork.org</h3>
-        </div>
 
       </footer>
     </div>

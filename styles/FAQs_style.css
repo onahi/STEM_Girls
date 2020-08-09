@@ -1,0 +1,36 @@
+/*
+  FAQs.css is used to design the FAQs.html page
+*/
+
+h2{
+  font-size: 1em;
+}
+.faqs{
+  width: 100%;
+  background-color: white;
+  padding: 5% 0%;
+}
+
+.faqs_container{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.question{
+  border-bottom: 1px solid silver;
+}
+
+#q1:hover, #q2:hover, #q3:hover, #q4:hover, #q5:hover, #q6:hover, #q7:hover,
+#q8:hover, #q9:hover, #q10:hover{
+  cursor: context-menu;
+}
+
+.answer{
+  display: none;
+}
+
+@media screen and (min-width: 868px){
+  h2{
+    font-size: 1.2em;
+  }
+}

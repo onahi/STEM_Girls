@@ -1,10 +1,17 @@
+/*
+  become_style.css is used for all the pages except index.html
+  It follows a mobile first design approach
+  @media queries where utilized in the css file
+*/
+
 
 body{
   margin: 0 0 0 0;
   font-family: 'Raleway', sans-serif;
   font-size: 1em;
   line-height: 1.8em;
-  color: #666666;
+  color: #2A3648;
+  background-color: #eeeeee;
 }
 
 .content{
@@ -17,11 +24,10 @@ header{
 
 .top{
   width: 100%;
-  background-color:orange;
+  background-color:white;
   height: 60px;
   position: fixed;
   top: 0px;
-  border-bottom: 1px solid #999999;
 }
 
 .stem_logo{
@@ -34,14 +40,13 @@ header{
 
 .nav_icon{
   margin-right: 10%;
-  color: white;
+  color: #2A3648;
   float: right;
   font-size: 25px;
   margin-top: 4%;
 }
 
 .nav_icon:hover{
-  background-color: white;
   color: silver;
   cursor: context-menu;
 }
@@ -50,55 +55,96 @@ main{
   margin-top: 60px;
 }
 
-.illustrate{
-  width: 100%;
-  margin: auto;
-  height: 400px;
-}
-
-.first_part{
+.first_part, .first_part-m{
   background-color: white;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5%;
+}
+
+.first_part-m{
+  flex-direction: row;
+}
+
+.illustrate{
+  width: 85%;
+  margin: auto;
+
 }
 
 .writeup{
   padding: 5%;
+  margin: 5% 5%;
+}
+
+.writeup-m{
+ width: 70%;
+ padding-left: 10%;
+}
+
+.illustrate-m{
+ width: 10%;
+ margin-top: 20%;
+}
+
+.desktop-h1{
+  display: none;
 }
 
 button, input[type="submit"]{
-  background-color: #e76525;
+  background-color: white;
   width: auto;
   height: 40px;
-  border: 3px solid white;
-  color: white;
-  border-radius: 5px;
+  border: 2px solid #2A3648;
+  color: #2A3648;
+  border-radius: 20px;
   font-family: 'Raleway', sans-serif;
   font-size: 1em;
 }
 
-input[type="submit"]{
-  width: 120px;
+input[type="submit"], #submit {
+  width: auto;
   margin-top: 2%;
+  color: white;
+  background-color: #e76525;
+  border: 2px solid white;
 }
 
-button:hover, input[type="submit"]:hover{
-  background-color: orange;
+button:hover{
+  background-color: #e76525;
+  color: white;
+  border: 0px;
 }
+
+input[type="submit"]:hover{
+  background-color: white ;
+  color: #e76525;
+}
+
 
 .form{
   padding: 10% ;
   line-height: 2em;
+  background-color: #e76525;
+  color: white;
+}
+
+.form-fields{
+  width: 90%;;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 input, select{
-  width: 90%;
+  width: 100%;
   height: 35px;
   border: 1px solid #999999;
   border-radius: 2px;
 }
 
 textarea{
-  width: 90%;
+  width: 100%;
 }
 
 label{
@@ -106,7 +152,7 @@ label{
 }
 
  span{
-   color: #e76525;
+   color: white;
    font-size: 15px;
    font-weight: bold;
  }
@@ -117,20 +163,25 @@ label{
    bottom: 0%;
  }
 
+ .confirmation, .about_us{
+   background-color: white;
+   width: 100%;
+
+ }
+
+ .message, .about{
+   width: 90%;
+   padding: 5% 5%;
+ }
+
 @media screen and (min-width: 868px){
   .content{
-    border: 1px solid #999999;
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
-    /*
-    -webkit-box-shadow: 0px 5px orange;
-    -moz-box-shadow: 1px 1px 1px 1px grey;
-     box-shadow: 1px 1px 1px 1px grey;
-     */
   }
 
   .top{
-    width: 70%;
+    width: 90%;
     height: 80px;
     margin: 0 auto;
   }
@@ -143,20 +194,64 @@ label{
     margin-top: 80px;
   }
 
-  .writeup{
-    padding: 5% 10%
+  .first_part{
+    flex-direction: row;
   }
 
+  .illustrate{
+    margin-left: 5%;
+    margin-top: 5%;
+  }
+
+  .mobile-h1{
+    display: none;
+  }
+
+  .desktop-h1{
+    display: block;
+  }
+
+  .writeup{
+    padding: 5% 2%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .writeup-m{
+    width: 60%;
+    padding: 5% 10%;
+    margin-top: 0%;
+  }
+
+  .illustrate-m{
+    width: 5%;
+    height: 60%;
+    padding-top: 5%;
+    margin-top: 0%;
+  }
   .form{
     padding: 5% 10%;
   }
 
   textarea{
-    width: 70%;
+    width: 100%;
+  }
+
+  .sidebar ul li a:hover{
+    color: silver;
+    text-decoration: none;
   }
 
   input, select{
-    width: 70%;
+    width: 100%;
     height: 30px;
+  }
+  .form-fields{
+    width: 60%;
+  }
+  .message, .about{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

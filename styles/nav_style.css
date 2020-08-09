@@ -1,9 +1,9 @@
 
 
   .sidebar{
-    width: 50%;
+    width: 65%;
     height: 80px;
-    margin-left: 45%;
+    margin-left: 30%;
     top: 0;
   }
   .nav_icon{
@@ -34,21 +34,25 @@
   }
 
   .sidebar ul ul li a:hover{
-    text-decoration: underline;
+    color: white;
+  }
+
+  .sidebar ul ul li a:active{
+    color: white;
   }
 
   .sidebar ul li a{
     text-decoration: none;
-    color: white;
+    color: #2A3648;
   }
   .sidebar ul li a:hover{
-    text-decoration: underline;
+    text-decoration: none;
     color: white;
   }
 
   .sidebar ul ul li{
-    margin-left: 45%;
-    background-color: white;
+    margin-left: 65%;
+    background-color: #eeeeee;
     display: none;
     width: 150px;
     padding: 2% 4%;
@@ -66,7 +70,7 @@
     display: none;
   }
   .FAQs_About{
-    display: none;
+  /*  display: none;*/
   }
 
 
@@ -117,6 +121,7 @@
 
 .sidebar ul ul li{
   margin-left: 0%;
+  background-color: white;
 }
 
 .sidebar ul ul li a{
@@ -147,12 +152,13 @@
 }
 
 .FAQs_About{
-  display: block;;
+  display: block;
 }
 
 .close{
   margin-left: 2%;
   margin-top: .5%;
+  background-color: #e76525;
 }
 
 .close:hover {

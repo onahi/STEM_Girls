@@ -75,7 +75,7 @@ main{
 
 .writeup{
   padding: 5%;
-  margin: 5% 5%;
+  margin: 0% 5%;
 }
 
 .writeup-m{
@@ -174,6 +174,10 @@ label{
    padding: 5% 5%;
  }
 
+ h1{
+   font-size: 1.5em;
+ }
+
 @media screen and (min-width: 868px){
   .content{
     width: 90%;
@@ -253,5 +257,8 @@ label{
     width: 60%;
     margin-left: auto;
     margin-right: auto;
+  }
+  h1{
+    font-size: 2em;
   }
 }

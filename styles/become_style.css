@@ -47,7 +47,7 @@ header{
 }
 
 .nav_icon:hover{
-  color: silver;
+  color: #e76525;;
   cursor: context-menu;
 }
 
@@ -242,7 +242,7 @@ label{
   }
 
   .sidebar ul li a:hover{
-    color: silver;
+    color: #e76525
     text-decoration: none;
   }
 

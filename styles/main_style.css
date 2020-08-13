@@ -17,7 +17,7 @@
 
   .top{
     width: 100%;
-    background-color: #F6B737;
+    background-color: white;
     height: 60px;
     position: fixed;
     top: 0px;
@@ -38,7 +38,7 @@
   }
   .nav_icon{
     margin-right: 5%;
-    color: white;
+    color: #2A3648;
     float: right;
     font-size: 25px;
     margin-top: 4%;
@@ -46,7 +46,7 @@
 
   .nav_icon:hover{
     background-color: white;
-    color: silver;
+    color: #e76525;
     cursor: context-menu;
   }
 
@@ -138,8 +138,7 @@
      color: #2A3648;
    }
 
-/* Styling of Initiative Segment*/
-
+/* Styling of Initiative Segment */
   .second_content{
     background-color: #226667;
     margin-top: -27px;

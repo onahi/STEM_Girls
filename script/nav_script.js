@@ -9,7 +9,7 @@ $(document).ready(function(){
     $(".sidebar").css("display", "none");
   })
   $(".get_involved").click(function(){
-    $(".sidebar ul ul li").toggle();
+    $(".sidebar ul ul li").toggle('slide');
   })
   $(".sidebar ul ul li a").click(function(){
     $(".sidebar ul ul li").toggle('hide');

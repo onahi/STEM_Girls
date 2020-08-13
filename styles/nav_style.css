@@ -1,20 +1,73 @@
 
 
   .sidebar{
-    width: 65%;
+    width: 70%;
     height: 80px;
     margin-left: 30%;
     top: 0;
+    color: white;
+    font-family: 'Raleway', sans-serif;
   }
   .nav_icon{
     display: none;
   }
+
+  .sidebar ul{
+    list-style-type: none;
+    margin-left: 0%;
+  }
+
+  .sidebar ul li{
+    float: left;
+    width: 18%;
+    text-align: center;
+    margin-top: 3%;
+  }
+
+  .sidebar ul li a{
+    text-decoration: none;
+  }
+
+  .sidebar ul ul{
+    margin-left: -45%;
+    margin-top: 15%;
+  }
+
+  .sidebar ul ul li{
+    width: 180px;
+    text-align: center;
+    background-color: #eeeeee;
+    margin: 0% 0;
+    padding: 4% 0;
+    list-style-type: none;
+    display: none;
+  }
+
+  .sidebar ul li a{
+    text-decoration: none;
+    color: #2A3648;
+  }
+
+  .sidebar ul li a:hover{
+    text-decoration: none;
+    color: #e76525;
+  }
+
+  #small-size{
+    width: 12%;
+    background-color: white;
+  }
+  #big-size{
+    width: 30%;
+  }
+
+  /*
   .sidebar ul li{
     display: inline;
-    width: 80%;
     border-bottom: none;
     margin-right: 5%;
   }
+
   .sidebar ul{
     top: 0%;
     margin-right: 20%;
@@ -33,10 +86,6 @@
     color: #e76525;
   }
 
-  .sidebar ul ul li a:hover{
-    color: white;
-  }
-
   .sidebar ul ul li a:active{
     color: white;
   }
@@ -47,7 +96,7 @@
   }
   .sidebar ul li a:hover{
     text-decoration: none;
-    color: white;
+    color: #e76525;
   }
 
   .sidebar ul ul li{
@@ -66,12 +115,15 @@
     text-decoration: underline;
     color: #e76525;
   }
+
+  */
   .sidebar_icon{
     display: none;
   }
   .FAQs_About{
 
   }
+
 
 
 @media screen and (max-width: 868px){
@@ -85,7 +137,6 @@
   background-color: white;
   width: 85%;
   height: 100%;
-  font-family: 'Raleway', sans-serif;
   font-size: 1em;
   line-height: 2em;
   display: none;
@@ -99,19 +150,28 @@
   background-color: white;
 }
 
-.sidebar ul li {
+.sidebar ul li, #big-size, #small-size{
+  float: none;
+  width: 90%;
   list-style-type: none;
   border-bottom: 1px solid grey;
   margin: auto;
   padding-top: 2%;
   padding-bottom: 2%;
   padding-right: 5%;
-  display: block;
   background-color: white;
+  text-align: left;
+}
+
+.sidebar ul ul{
+  margin-left: 0%;
+  margin-top: 0%;
 }
 
 .sidebar ul ul li{
   margin-left: 0%;
+  text-align: left;
+  display: block;
 }
 
 .sidebar ul li a{
@@ -132,28 +192,14 @@
   display: block;
 }
 
-.sidebar ul li:last-child{
-  border-bottom: none;
-}
-
-.sidebar ul li a:hover{
-  color: #a6a6a6;
-}
-
 .sidebar ul ul li{
   border-bottom: none;
   padding-top: 0.5%;
   padding-bottom: .5%;
   display: block;
-}
-
-.sidebar ul ul li{
   color: #666666;
 }
 
-.FAQs_About{
-  display: block;
-}
 
 .close{
   margin-left: 2%;
